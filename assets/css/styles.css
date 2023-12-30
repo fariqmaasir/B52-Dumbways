@@ -1,0 +1,7 @@
+body{
+    background-color: whitesmoke;
+}
+ .container{
+    margin: auto auto;
+    box-shadow: 0px 0px 5px 1px grey;
+}
