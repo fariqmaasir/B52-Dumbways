@@ -1,0 +1,30 @@
+body{
+    background-color: whitesmoke;
+}
+.header{
+    text-align: center;
+}
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+}   
+.input-box{
+    border-radius: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 5px 1px gray;
+}
+.label-form{
+    margin-left: 250px;
+}
+.submit-btn{
+    margin-left: 500px;
+    margin-right: 500px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
