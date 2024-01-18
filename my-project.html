@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Project </title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8846a9d2c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/my-project.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+  </head>
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+      rel="contact.css"
+    />
+    <nav class="navbar">
+      <ul class="navbar-ul">
+          <div class="navbar-left">
+              <li>
+                  <img src="assets/img/dumbways.png" class="navbar-logo" />
+              </li>
+              <li>
+                  <a href="index.html" class="navbar-link active"> Home </a>
+              </li>
+              <li>
+                  <a href="my-project.html" class="navbar-link"> My Project </a>
+              </li>
+          </div>
+          <div class="navbar-right">
+              <li>
+                  <a href="contact.html" class="navbar-contact-btn"> Contact Me</a>
+              </li>
+              <i class="fa-solid fa-bars fa-2x" style="cursor: pointer;" id="hamburger-button"
+              onclick="openHamburger()"></i>
+      </div>
+  </ul>
+  <div id="hamburger-navbar-container" class="hamburger-navbar-container hidden">
+      <a class="hamburger-navbar-link hamburger-active" href="index.html">Home</a>
+      <a class="hamburger-navbar-link" href="my-project.html">My Project</a>
+      <a class="hamburger-navbar-link" href="contact.html">Contact Me</a>
+  </div>
+</nav>
+  <div class="containers">
+    <form onsubmit="addProject(event)" class="form">
+      <h1>ADD MY PROJECT</h1>
+      <label class="label-form" for="name">Project Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter project name"class="text">
+      <div class="date-input">
+        <div>
+          <label class="label-form-right" for="start">Start Date</label>
+          <input type="date" id="start" name="start">
+        </div>
+        <div>
+          <label class="label-form-left" for="end">End Date</label>
+          <input type="date" id="end" name="end">
+        </div>
+      </div>
+      <label class="label-form" for="desc">Description</label>
+      <textarea class="textarea" id="desc" name="desc" placeholder="Enter project description"></textarea>
+      <label class="label-form" for="tech">Technologies</label>
+      <div class="checkboxes">
+        <input type="checkbox" id="node" name="tech" value="Node Js">
+        <label for="node">Node Js</label>
+        <input type="checkbox" id="next" name="tech" value="Next Js">
+        <label for="next">Next Js</label>
+        <input type="checkbox" id="react" name="tech" value="React Js">
+        <label for="react">React Js</label>
+        <input type="checkbox" id="type" name="tech" value="TypeScript">
+        <label for="type">TypeScript</label>
+      </div>
+      <label class="label-form" for="image">Upload Image</label>
+      <input class="img-file" type="file" id="image" name="image" accept="image/*">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+    <div class="projects">
+      <h1>MY PROJECT</h1>
+      <div class="grid" id="grid">
+        <div class="card">
+          <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/6193dca3e8165c52e89c7f2b_florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="Dumbways Mobile App">
+          <a href="my-project-detail.html">Dumbways Mobile App - 2021</a>
+          <p>durasi: 3 bulan</p>
+          <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+          <div class="logo">
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-android"></i>
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="options">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://awsimages.detik.net.id/community/media/visual/2022/04/14/ilustrasi-smartphone.jpeg?w=650&q=80" alt="Dumbways Mobile App">
+          <a href="my-project-detail.html">Dumbways Mobile App - 2021</a>
+          <p>durasi: 3 bulan</p>
+          <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+          <div class="logo">
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-android"></i>
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="options">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://cdn.idntimes.com/content-images/post/20210921/ayzp5pqupuyrandxq9fhj-df0ae4fa7399bd541273bed4e010bc78_600x400.jpg" alt="Dumbways Mobile App">
+          <a href="my-project-detail.html">Dumbways Mobile App - 2021</a>
+          <p>durasi: 3 bulan</p>
+          <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+          <div class="logo">
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-android"></i>
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="options">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>       
+         <div class="card">
+          <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/6193dca3e8165c52e89c7f2b_florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="Dumbways Mobile App">
+          <a href="my-project-detail.html">Dumbways Mobile App - 2021</a>
+          <p>durasi: 3 bulan</p>
+          <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+          <div class="logo">
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-android"></i>
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="options">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/6193dca3e8165c52e89c7f2b_florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="Dumbways Mobile App">
+          <a href="my-project-detail.html">Dumbways Mobile App - 2021</a> 
+          <p>durasi: 3 bulan</p>
+          <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+          <div class="logo">
+            <i class="fa-brands fa-google-play"></i>
+            <i class="fa-brands fa-android"></i>
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="options">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+        <!-- Add more cards for other projects -->
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/my-project.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  </body>
+</html>

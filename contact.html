@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8846a9d2c5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis&display=swap"
+      rel="contact.css"
+    />
+    <nav class="navbar">
+      <ul class="navbar-ul">
+        <div class="navbar-left">
+          <li>
+            <img src="assets/img/dumbways.png" class="navbar-logo" />
+          </li>
+          <li>
+            <a href="index.html" class="navbar-link active"> Home </a>
+          </li>
+          <li>
+            <a href="my-project.html" class="navbar-link"> My Project </a>
+          </li>
+        </div>
+        <div class="navbar-right">
+          <li>
+            <a href="contact.html" class="navbar-contact-btn"> Contact Me</a>
+          </li>
+          <i
+          class="fa-solid fa-bars fa-2x"
+          style="cursor: pointer"
+          id="hamburger-button"
+          onclick="openHamburger()"
+        ></i>
+      </div>
+    </ul>
+    <div
+      id="hamburger-navbar-container"
+      class="hamburger-navbar-container hidden"
+    >
+      <a class="hamburger-navbar-link hamburger-active" href="index.html"
+        >Home</a
+      >
+      <a class="hamburger-navbar-link" href="my-project.html">My Project</a>
+      <a class="hamburger-navbar-link" href="contact.html">Contact Me</a>
+    </div>
+  </nav>
+    <h1 class="header">GET IN TOUCH</h1>
+    <form class="form-contact" onsubmit="submitData(event)">
+      <label for="name" class="label-form">Name</label>
+      <input
+        type="text"
+        id="name"
+        class="input-box"
+        placeholder="enter your name"
+      />
+      <label for="email" class="label-form">Email</label>
+      <input
+        type="text"
+        id="email"
+        class="input-box"
+        placeholder="enter your email"
+      />
+      <label for="phoneNumber" class="label-form">Phone Number</label>
+      <input
+        type="text"
+        id="phoneNumber"
+        class="input-box"
+        placeholder="enter your phone"
+      />
+      <label for="subject" class="label-form">Subject</label>
+      <select id="subject" class="input-box">
+        <option value="choose">Choose Your Option</option>
+        <option value="talk">Let's Talk</option>
+        <option value="collaborate">Let's Collaborate</option>
+        <option value="privacyPolice">Privacy Police</option>
+      </select>
+      <label for="yourMessage" class="label-form">Your Message</label>
+      <textarea
+        name="yourMessage"
+        id="yourMessage"
+        class="input-box"
+        rows="10"
+        placeholder="enter your message"
+      ></textarea>
+      <button class="submit-btn" onclick="">Submit</button>
+    </form>
+    <script src="assets/js/navbar.js"></script>
+    <script src="/assets/js/contact.js"></script>
+  </body>
+</html>
