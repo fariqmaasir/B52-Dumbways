@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testimonial</title>
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/testimonial.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-ul">
+          <div class="navbar-left">
+            <li>
+              <img src="assets/img/dumbways.png" class="navbar-logo" />
+            </li>
+            <li>
+              <a href="index.html" class="navbar-link active"> Home </a>
+            </li>
+            <li>
+              <a href="my-project.html" class="navbar-link"> My Project </a>
+            </li>
+            <li>
+              <a href="testimonial.html" class="navbar-link"> Testimonial </a>
+            </li>
+          </div>
+          <div class="navbar-right">
+            <li>
+              <a href="contact.html" class="navbar-contact-btn"> Contact Me</a>
+            </li>
+            <i
+              class="fa-solid fa-bars fa-2x"
+              style="cursor: pointer"
+              id="hamburger-button"
+              onclick="openHamburger()"
+            ></i>
+          </div>
+        </ul>
+        <div
+          id="hamburger-navbar-container"
+          class="hamburger-navbar-container hidden"
+        >
+          <a class="hamburger-navbar-link hamburger-active" href="index.html"
+            >Home</a
+          >
+          <a class="hamburger-navbar-link" href="my-project.html">My Project</a>
+          <a class="hamburger-navbar-link" href="contact.html">Contact Me</a>
+          <a class="hamburger-navbar-link" href="testimonial.html">Testimonial</a>
+        </div>
+      </nav>
+
+    <div class="container">
+        <h1>My Testimonials</h1>
+
+        <section class="testimonials" id="testimonials">
+
+        </section>
+    </div>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/ajax.js"></script>
+</body>
+
+</html>
