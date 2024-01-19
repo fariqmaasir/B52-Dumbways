@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8846a9d2c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-ul">
+        <div class="navbar-left">
+          <li>
+            <img src="assets/img/dumbways.png" class="navbar-logo" />
+          </li>
+          <li>
+            <a href="index.html" class="navbar-link active"> Home </a>
+          </li>
+          <li>
+            <a href="my-project.html" class="navbar-link"> My Project </a>
+          </li>
+          <li>
+            <a href="testimonial.html" class="navbar-link"> Testimonial </a>
+          </li>
+        </div>
+        <div class="navbar-right">
+          <li>
+            <a href="contact.html" class="navbar-contact-btn"> Contact Me</a>
+          </li>
+          <i
+            class="fa-solid fa-bars fa-2x"
+            style="cursor: pointer"
+            id="hamburger-button"
+            onclick="openHamburger()"
+          ></i>
+        </div>
+      </ul>
+      <div
+        id="hamburger-navbar-container"
+        class="hamburger-navbar-container hidden"
+      >
+        <a class="hamburger-navbar-link hamburger-active" href="index.html"
+          >Home</a
+        >
+        <a class="hamburger-navbar-link" href="my-project.html">My Project</a>
+        <a class="hamburger-navbar-link" href="contact.html">Contact Me</a>
+        <a class="hamburger-navbar-link" href="testimonial.html">Testimonial</a>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="left">
+        <h1>Hi welcome to my hut</h1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Mattis rhoncus urna
+        neque viverra justo nec ultrices dui. A arcu cursus vitae congue mauris
+        rhoncus aenean vel elit. Cras sed felis eget velit aliquet sagittis.
+        Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Tellus
+        in hac habitasse platea dictumst vestibulum rhoncus est. Nisi est sit
+        amet facilisis magna etiam tempor.
+        <div>
+          <div class="contact-border">
+            <a href="/contact.html" class="contact-text">contact</a>
+          </div>
+          <div class="cv">
+            <a
+              href="https://docs.google.com/document/d/12PYBEQ4G06tgdfC2epqxndkr5VRXYJpNXKrOxZVdE94/edit?usp=sharing"
+              >Cv</a
+            >
+          </div>
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div class="right">
+        <img src="./assets/img/IMG_5268 fariq 4x6.jpg" alt="image" />
+        <h1 class="img-name">Fariq Maasir</h1>
+        <p class="img-desc">Fullstack Developer</p>
+      </div>
+    </section>
+    <script src="assets/js/navbar.js"></script>
+  </body>
+</html>
