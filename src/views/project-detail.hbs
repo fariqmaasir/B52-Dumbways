@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Project - Detail</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8846a9d2c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../assets/css/my-project-detail.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-ul">
+        <div class="navbar-left">
+          <li>
+            <a href="/"><img src="../assets/img/dumbways.png" class="navbar-logo" /></a>
+          </li>
+          <li>
+            <a href="/" class="navbar-link active"> Home </a>
+          </li>
+          <li>
+            <a href="/project" class="navbar-link"> Project </a>
+          </li>
+          <li>
+            <a href="/testimonial" class="navbar-link"> Testimonial </a>
+          </li>
+        </div>
+        <div class="navbar-right">
+          <li>
+            <a href="/contact" class="navbar-contact-btn"> Contact Me</a>
+          </li>
+          <i
+            class="fa-solid fa-bars fa-2x"
+            style="cursor: pointer"
+            id="hamburger-button"
+            onclick="openHamburger()"
+          ></i>
+        </div>
+      </ul>
+      <div
+        id="hamburger-navbar-container"
+        class="hamburger-navbar-container hidden"
+      >
+        <a class="hamburger-navbar-link hamburger-active" href="/"
+          >Home</a
+        >
+        <a class="hamburger-navbar-link" href="/project">Project</a>
+        <a class="hamburger-navbar-link" href="/contact">Contact Me</a>
+        <a class="hamburger-navbar-link" href="/testimonial">Testimonial</a>
+      </div>
+    </nav>
+    <div class="containers">
+      <h1></h1>
+      <h1>{{this.title}}</h1>
+      <div class="content">
+        <div class="image">
+          <img
+            src="{{this.img}}"
+          />
+        </div>
+        <div class="details">
+          <p>Duration</p>
+          <ul class="time">
+            <li>
+              <i class="fa-regular fa-calendar-days"></i>12 Jan 2021 - 11 Feb
+              2021
+            </li>
+            <li><i class="fa-regular fa-clock"></i>1 month</li>
+          </ul>
+          <h>Technologies</h>
+          <ul class="tech">
+            <li><i class="fa-brands fa-react"></i>react js</li>
+            <li><i class="fa-brands fa-js"></i>java script</li>
+            <li><i class="fa-brands fa-node-js"></i>node js</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="description">
+        <p>
+          {{this.description}}
+        </p>
+        
+      </div>
+    </div>
+    <script src="assets/js/navbar.js"></script>
+  </body>
+</html>
