@@ -61,24 +61,24 @@
       <div class="content">
         <div class="image">
           <img
-            src="{{this.img}}"
+            src="https://assets-global.website-files.com/6100d0111a4ed76bc1b9fd54/6193dca3e8165c52e89c7f2b_florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
           />
         </div>
         <div class="details">
           <p>Duration</p>
           <ul class="time">
             <li>
-              <i class="fa-regular fa-calendar-days"></i>12 Jan 2021 - 11 Feb
-              2021
+              <i class="fa-regular fa-calendar-days"></i>{{this.startDate}} To {{this.endDate}}
             </li>
-            <li><i class="fa-regular fa-clock"></i>1 month</li>
+            <li>
+              <i class="fa-regular fa-clock"></i>{{this.duration}}
+            </li>
           </ul>
           <h>Technologies</h>
           <ul class="tech">
-            <li><i class="fa-brands fa-react"></i>react js</li>
-            <li><i class="fa-brands fa-js"></i>java script</li>
-            <li><i class="fa-brands fa-node-js"></i>node js</li>
-            <li></li>
+                {{#each this.icon}}   
+                       <i class="{{this}}"></i>
+                {{/each}}
           </ul>
         </div>
       </div>
