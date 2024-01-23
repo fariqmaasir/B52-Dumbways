@@ -1,0 +1,173 @@
+  .container {
+  width: 80%;
+  margin: auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.form h1 {
+  text-align: center;
+}
+.label-form {
+  margin-left: 250px;
+}
+.label-form{
+  margin-top: 100px;
+}
+.form label {
+  display: block;
+  margin-top: 10px;
+}
+.text{
+  border-radius: 10px;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 10px;
+  padding-right: 500px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 5px 1px gray;
+}
+.form input[type="file"] {
+  border-radius: 10px;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 10px;
+  padding-right: 500px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 5px 1px gray;
+}
+.form input[type="date"] {
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 220px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 5px 1px gray;
+}
+.date-input{
+  display: flex;
+  justify-content: center;
+}
+.textarea {
+  border-radius: 10px;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 10px;
+  padding-right: 500px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 5px 1px gray;
+}
+.form input[type="checkbox"] {
+  width: auto;
+}
+
+.form .checkboxes {
+  margin-left: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form .checkboxes label {
+  margin-right: 10px;
+}
+
+.form button {
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.projects {
+  padding: 20px;
+}
+
+.projects h1 {
+  text-align: center;
+}
+
+.projects .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.projects .card {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.projects .card img {
+  width: 100%;
+}
+
+.projects .card h3 {
+  font-size: 18px;
+}
+
+.projects .card p {
+  font-size: 14px;
+}
+
+.projects .card .options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects .card .options button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 766px) {
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+  .form input[type="date"]{
+    margin: 0px;
+    padding-right: 0%;
+  }
+  .textarea{
+    margin: 0px;
+    padding-right: 0%;
+  }
+  .form .checkboxes{
+    margin: 0px;
+
+  }
+  .projects .grid{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .submit{
+    margin: 0px;
+  }
+  .text{
+    margin: 0px;
+    padding-right: 0%;
+  } 
+  .label-form{
+    margin: 0px;
+  }
+  .form input[type="file"]{
+    margin: 0px;
+    padding-right: 0%;
+  }
+  .form button{
+    margin: auto;
+  }
+}
