@@ -57,7 +57,7 @@
     </nav>
     <div class="containers">
       <h1></h1>
-      <h1>{{this.title}}</h1>
+      <h1>{{arrCards.title}}</h1>
       <div class="content">
         <div class="image">
           <img
@@ -68,23 +68,23 @@
           <p>Duration</p>
           <ul class="time">
             <li>
-              <i class="fa-regular fa-calendar-days"></i>{{this.startDate}} To {{this.endDate}}
+              <i class="fa-regular fa-calendar-days"></i>{{dateOne}} - {{dateTwo}}
             </li>
             <li>
-              <i class="fa-regular fa-clock"></i>{{this.duration}}
+              <i class="fa-regular fa-clock"></i>{{arrCards.duration}}
             </li>
           </ul>
           <h>Technologies</h>
           <ul class="tech">
-                {{#each this.icon}}   
-                       <i class="{{this}}"></i>
+                {{#each this.technologies}}   
+                    <i class="fa-brands fa-{{this}} fa-2x"></i>
                 {{/each}}
           </ul>
         </div>
       </div>
       <div class="description">
         <p>
-          {{this.description}}
+          {{arrCards.description}}
         </p>
         
       </div>

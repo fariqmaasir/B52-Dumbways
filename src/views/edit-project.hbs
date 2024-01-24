@@ -33,26 +33,26 @@
       </nav>
       <div class="w-50 mx-auto mt-5">
         <!-- Header -->
-        <h1 class="text-center mb-5">Get In Touch</h1>
-        <form action="/project" method="POST">
+        <h1 class="text-center mb-5">Update Project</h1>
+        <form action="/reproject/{{id}}" method="POST">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Project Name</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Project Name" name="title">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Project Name" name="title" value="{{title}}">
           </div>
           <div class="row mb-3">
             <div class="col">
                 <label for="exampleFormControlInput1" class="form-label">Start Date</label>
-              <input type="date" class="form-control" aria-label="First name" name="startDate">
+              <input type="date" class="form-control" aria-label="First name" name="startDate" value="{{start_date}}">
             </div>
             <div class="col">
                 <label for="exampleFormControlInput1" class="form-label" >End Date</label>
-              <input type="date" class="form-control" aria-label="Last name" name="endDate">
+              <input type="date" class="form-control" aria-label="Last name" name="endDate" value="{{end_date}}">
             </div>
           </div>
           <div class="mb-3">
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label" >Description</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Project Description" name="description"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Project Description" name="description" value="{{description}}"></textarea>
               </div>
             <div class="d-flex flex-wrap">
               <div class="form-check">
